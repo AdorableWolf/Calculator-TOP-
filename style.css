@@ -1,0 +1,105 @@
+body {
+    background-color: whitesmoke;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+.heading {
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(64, 161, 194);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px silver;
+    font-size: 35px;
+
+}
+
+.container{
+    text-align: center;
+    align-items: center;
+}
+
+.calc {
+    box-sizing: content-box;
+    display: inline-block;
+    position: relative;   
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 8px lightskyblue;
+}
+
+.display {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    text-align: right;
+    height: 150px;
+    width: 750px;
+    padding: 15px 10px 2px 10px;
+    font-size: 50px;
+    font-family: sans-serif; 
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.display p {
+    float: right;
+    margin: 0 auto;
+    color: rgb(64, 161, 194)
+}
+
+.display:hover {
+    border-style: solid;
+    border-color: gray;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    height: 750px; width: 750px;
+}
+
+button {
+    background-color: lightblue;
+    border: none;
+    color: white;
+    height: 150px; width: 187.5px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    cursor: pointer;
+    -webkit-tap-highlight-color: white;
+}
+
+#addition{
+    border-radius: 0 0 10px 0;
+}
+.zero{
+    border-radius: 0 0 0 10px;
+}
+
+
+#clear {
+    width : 375px;
+}
+button:hover {
+    background-color: whitesmoke;
+    color: rgb(64, 161, 194); 
+}
+button:active {
+    transform: scale(1.05,1.1);
+    background-color: white;
+    color: black; 
+}
+button:focus {
+    outline: none;
+}
+.operator {
+    background-color: lightskyblue;
+}
+
+#equals {
+    background-color: rgb(64, 161, 194);
+}
